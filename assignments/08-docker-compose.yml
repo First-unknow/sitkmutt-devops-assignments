@@ -31,6 +31,8 @@ services:
     image: ghcr.io/first-unknow/bookinfo-reviews:dev
     ports:
       - "8082:9080"
+    environment:
+      RATINGS_HOSTNAME: ratings_url
 
   productpage:
     build: "../productpage/"
